@@ -1,16 +1,18 @@
 package com.example.koachy
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
+class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
     private var koreanVocab = arrayOf("Word One", "Word Two", "Word Three", "Word Four", "Word Five", "Word Six", "Word Seven")
     private var englishVocab = arrayOf("Translation One", "Translation Two", "Translation Three", "Translation Four", "Translation Five", "Translation Six", "Translation Seven")
-    private var koreanFlag = intArrayOf(R.drawable.koreawipfel,R.drawable.koreawipfel,R.drawable.koreawipfel,R.drawable.koreawipfel,R.drawable.koreawipfel,R.drawable.koreawipfel,R.drawable.koreawipfel)
+    private var koreanFlag = intArrayOf(R.drawable.koreawipfel,R.drawable.koreawipfel,R.drawable.koreawipfel,
+        R.drawable.koreawipfel,R.drawable.koreawipfel,R.drawable.koreawipfel,R.drawable.koreawipfel)
         private var englishFlag = intArrayOf(R.drawable.ukwipfel,R.drawable.ukwipfel,R.drawable.ukwipfel,R.drawable.ukwipfel,R.drawable.ukwipfel,R.drawable.ukwipfel,R.drawable.ukwipfel)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter.ViewHolder {
