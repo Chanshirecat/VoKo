@@ -9,6 +9,7 @@
     app:cardCornerRadius="12dp"
     app:cardElevation="3dp"
     app:contentPadding="4dp"
+    android:layout_marginHorizontal="20dp"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,9 +17,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/relativeLayout"
         android:padding="16dp"
+        android:layout_marginHorizontal="5dp"
     >
         <ImageView
             android:id="@+id/koreanFlag"
+            android:src="@drawable/koreawipfel"
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:layout_constraintTop_toTopOf="parent"
@@ -33,6 +36,8 @@
             app:layout_constraintEnd_toStartOf="@id/englishFlag"
             app:layout_constraintStart_toEndOf="@id/koreanFlag"
             app:layout_constraintTop_toTopOf="parent"
+            android:hint="korean"
+            android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginStart="5dp"
             android:textSize="14sp"
@@ -40,6 +45,7 @@
 
         <ImageView
             android:id="@+id/englishFlag"
+            android:src="@drawable/ukwipfel"
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:layout_constraintTop_toTopOf="parent"
@@ -53,6 +59,8 @@
             android:id="@+id/englishVocab"
             android:layout_width="140dp"
             android:layout_height="39dp"
+            android:hint="english"
+            android:textAlignment="center"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/englishFlag"
