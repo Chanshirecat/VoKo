@@ -48,17 +48,26 @@
         app:layout_constraintTop_toBottomOf="@id/title" />
 
     <Button
-        android:id="@+id/inputButton"
+        android:id="@+id/addBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Save"
+        android:text="Add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/englishVocabInput"
         android:layout_marginBottom="70dp"
-        android:width="120dp"
-        android:height="160px"/>
+        android:width="100dp"
+        android:height="55dp"/>
+
+    <Button
+        android:id="@+id/vocabBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vocabulary"
+        app:layout_constraintTop_toBottomOf="@id/addBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
 </androidx.constraintlayout.widget.ConstraintLayout>
 

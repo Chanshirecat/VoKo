@@ -1,5 +1,6 @@
 package com.example.koachy
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -21,5 +22,11 @@ class VocabActivity : AppCompatActivity() {
 
         adapter = RecyclerAdapter()
         recyclerView.adapter = adapter
+
+        val button: Button = findViewById(R.id.addBtn)
+        button.setOnClickListener {
+            val intent = Intent(this, AddActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
